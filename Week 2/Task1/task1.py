@@ -1,11 +1,8 @@
-# Task 2 - simple variable declaration and output
+# Given list of tuples
+my_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 
-zahl = 10
-kommazahl = 10.5
-text = "Hello, World!"
-wahrheitswert = True
+# Sort by the last element of each tuple
+sorted_list = sorted(my_list, key=lambda x: x[-1])
 
-print("zahl =", zahl, "| type:", type(zahl))
-print("kommazahl =", kommazahl, "| type:", type(kommazahl))
-print("text =", text, "| type:", type(text))
-print("wahrheitswert =", wahrheitswert, "| type:", type(wahrheitswert))
+# Print the result
+print(sorted_list)
