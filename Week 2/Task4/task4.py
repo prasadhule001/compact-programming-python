@@ -1,11 +1,8 @@
-# Task 2 - simple variable declaration and output
+# Given list of strings
+strings = ["Hello", "World", "Prasad"]
 
-zahl = 10
-kommazahl = 10.5
-text = "Hello, World!"
-wahrheitswert = True
+# Convert each string into a list of characters using map()
+result = list(map(list, strings))
 
-print("zahl =", zahl, "| type:", type(zahl))
-print("kommazahl =", kommazahl, "| type:", type(kommazahl))
-print("text =", text, "| type:", type(text))
-print("wahrheitswert =", wahrheitswert, "| type:", type(wahrheitswert))
+# Print the result
+print(result)
