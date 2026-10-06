@@ -1,11 +1,11 @@
-# Task 2 - simple variable declaration and output
+s1 = "abc123xyz45"
 
-zahl = 10
-kommazahl = 10.5
-text = "Hello, World!"
-wahrheitswert = True
+# Get all digits from the string
+digits = [int(char) for char in s1 if char.isdigit()]
 
-print("zahl =", zahl, "| type:", type(zahl))
-print("kommazahl =", kommazahl, "| type:", type(kommazahl))
-print("text =", text, "| type:", type(text))
-print("wahrheitswert =", wahrheitswert, "| type:", type(wahrheitswert))
+# Calculate sum and average
+total = sum(digits)
+average = total / len(digits)
+
+print("Sum:", total)
+print("Average:", average)
